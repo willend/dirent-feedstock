@@ -1,6 +1,6 @@
 {% set name = "dirent" %}
-{% set version = "1.21" %}
-{% set sha256 = "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed" %}
+{% set version = "1.22" %}
+{% set sha256 = "a0f39b89eafbc306288f9072ecf1f41b4e413b34a2fb5a2eb91120dc44ec32eb" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not win]
   script:
     - if not exist "%LIBRARY_INC%" mkdir "%LIBRARY_INC%"  # [win]
